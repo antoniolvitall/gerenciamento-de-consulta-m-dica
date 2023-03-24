@@ -11,3 +11,7 @@ class Profissional(models.Model):
         ('E', 'Enfermeiro'),
         ('T', 'Técnico de Enfermagem')
     )
+
+class Consulta(models.Model):
+    data_consulta = models.DateField()
+    Profissional
