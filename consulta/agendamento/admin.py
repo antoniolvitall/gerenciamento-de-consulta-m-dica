@@ -5,7 +5,7 @@ from django.contrib import admin
 class Profissionais(admin.ModelAdmin):
     list_display = ('id', 'nome', 'nomesocial','cns', 'CARGO')
     list_display_links = ('id', 'nomesocial')
-    search_fields = ('nomesocial')
+    search_fields = ('nomesocial',)
     list_per_page = 10
 
 admin.site.register(Profissional, Profissionais)
